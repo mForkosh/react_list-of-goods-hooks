@@ -96,13 +96,11 @@ export const App: React.FC = () => {
       </div>
 
       <ul>
-        <ul>
-          {sortedGoods.map(value => (
-            <li key={value} data-cy="Good">
-              {value}
-            </li>
-          ))}
-        </ul>
+        {sortedGoods.map(value => (
+          <li key={value} data-cy="Good">
+            {value}
+          </li>
+        ))}
       </ul>
     </div>
   );
